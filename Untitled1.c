@@ -1,23 +1,19 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-        int num1,num2,num3, add, average;
+int main() {
+    float num1,num2,num3, average;
 
-    printf("My name is Cyrel Cabodbod\n");
-    printf("Compute the Sum and Average of 3 inputted Numbers\n ");
+    printf("Enter 3 Floating point number: \n"); /*display text*/
+    printf(""); /*input num1*/
+    scanf("%f", &num1); /*scan num1*/
+    printf(""); /*input num2*/
+    scanf("%f", &num2); /*scan num2*/
+    printf(""); /*input num3*/
+    scanf("%f", &num3); /*scan num3*/
 
-    printf("Enter First Number: ");
-    scanf("%d", &num1);
-    printf("Enter Second Number: ");
-    scanf("%d", &num2);
-    printf("Enter Third Number: ");
-    scanf("%d", &num3);
-    add = num1 + num2 + num3;
-    average= add / 3;
-    printf("Sum : %d \n", add);
+    average = (num1+num2+num3)/3; /*formula for the average by adding the 3 numbers and divide it by 3*/
 
-    printf("Average: %d \n", average);
+    printf("\nAverage= %.1f",average); /*the result*/
 
     return 0;
 }
